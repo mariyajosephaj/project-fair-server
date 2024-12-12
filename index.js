@@ -13,6 +13,7 @@ pfServer.use(cors())
 // Returns middleware (function) that only parses json
 pfServer.use(express.json())
 pfServer.use(router)
+pfServer.use('/uploads',express.static('./uploads'))
 
 
 
